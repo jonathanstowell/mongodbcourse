@@ -23,9 +23,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="homework\" />
+    <Folder Include="homework\dump\" />
     <Folder Include="lectureone\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="homework\hw1-2.py" />
+    <Compile Include="homework\hw1-3.py" />
     <Compile Include="lectureone\helloworld.py" />
     <Compile Include="lectureone\pymongo_getting_started.py" />
   </ItemGroup>
