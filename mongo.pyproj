@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>67585345-727a-42e0-8d00-d7a37296f43a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>mongo</Name>
+    <RootNamespace>mongo</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="weekone\lectures\" />
+    <Folder Include="weekone\homework\" />
+    <Folder Include="weektwo\" />
+    <Folder Include="weekone\" />
+    <Folder Include="weektwo\homework\" />
+    <Folder Include="weektwo\homework\hw-03\" />
+    <Folder Include="weektwo\lectures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="weekone\homework\hw1-2.py" />
+    <Compile Include="weekone\homework\hw1-3.py" />
+    <Compile Include="weekone\lectures\helloworld.py" />
+    <Compile Include="weekone\lectures\pymongo_getting_started.py" />
+    <Compile Include="weektwo\homework\hw-02.py" />
+    <Compile Include="weektwo\homework\hw-03\blog.py" />
+    <Compile Include="weektwo\homework\hw-03\user.py" />
+    <Compile Include="weektwo\homework\hw-03\validate.py" />
+    <Compile Include="weektwo\lectures\find_using_gt_lt.py" />
+    <Compile Include="weektwo\lectures\insert_quiz.py" />
+    <Compile Include="weektwo\lectures\read_reddit.py" />
+    <Compile Include="weektwo\lectures\using_dot_notation.py" />
+    <Compile Include="weektwo\lectures\using_find.py" />
+    <Compile Include="weektwo\lectures\using_find_and_modify.py" />
+    <Compile Include="weektwo\lectures\using_find_with_selector.py" />
+    <Compile Include="weektwo\lectures\using_insert.py" />
+    <Compile Include="weektwo\lectures\using_limit_skip_sort.py" />
+    <Compile Include="weektwo\lectures\using_regex.py" />
+    <Compile Include="weektwo\lectures\using_update.py" />
+    <Compile Include="weektwo\lectures\using_upsert.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="weektwo\homework\grades.js" />
+    <Content Include="weektwo\homework\hw_01.js" />
+    <Content Include="weektwo\lectures\create_student_collection.js" />
+    <Content Include="weektwo\lectures\reddit.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
